@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>My web page!</title>
+    <style>
+        input[type=text] {
+            background-color:red;
+        }
+        input[type=number] {
+            background-color:yellow;
+        }
+    </style>
 </head>
 <body>
-    <form >
-        <div>
-            <input name="name" type="text" placeholder="Name">
-            <input name="password" type="password" placeholder="Password">
-        </div>
-        <div>
-            Favorite color
-            <input name="color" type="radio" value="red">red
-            <input name="color" type="radio" value="green">green
-            <input name="color" type="radio" value="blue">blue
-            <input name="color" type="radio" value="other">other
-        </div>
-        <div>
-            <input name="country" list="countries" placeholder="Country">
-            <datalist id="countries">
-                <option value="Brazil"></option>
-                <option value="Belize"></option>
-                <option value="Congo"></option>
-                <option value="Denmark"></option>
-                <option value="Argentina"></option>
-            </datalist>
-        </div>
-    </form>
+        <p>
+        <h1>First form</h1>
+        <form>
+            <div>
+                <input name="name" type="text" placeholder="Name">
+                <input name="password" type="password" placeholder="Password">
+            </div>
+            <div>
+                Favorite color
+                <input name="color" type="radio" value="red">red
+                <input name="color" type="radio" value="green">green
+                <input name="color" type="radio" value="blue">blue
+                <input name="color" type="radio" value="other">other
+            </div>
+            <div>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Brazil"></option>
+                    <option value="Belize"></option>
+                    <option value="Congo"></option>
+                    <option value="Denmark"></option>
+                    <option value="Argentina"></option>
+                </datalist>
+            </div>
+        </form>
+    </p>
+    <p>
+        <h1>Some other form</h1>
+        <form>
+            <input name="name" type="text" placeholder="First Name">
+            <input name="name" type="text" placeholder="Last Name">
+            <input name="name" type="number" placeholder="Age">
+        </form>
+    </p>
 </body>
 </html>
