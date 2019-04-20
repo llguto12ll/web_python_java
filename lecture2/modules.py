@@ -1,3 +1,3 @@
-from functions import square
+import functions
 
-print(square(10))
+print(functions.square(10))
